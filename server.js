@@ -25,7 +25,10 @@ app.get("/sensor", (req,res) =>{
 
 
 app.get("/sensor", (req,res) =>{
-
+    
 })
 const PORT = process.env.PORT || 3000
 
+app.listen(PORT, function () {
+    console.log('API Aguardando Requisições!!!')
+})
