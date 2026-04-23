@@ -10,10 +10,14 @@ app.get("/sensor", (req,res) =>{
         return res.status(400).send("dados invalidos")
     }
 
+    const dataFormatada = new Date().toLocaleString('pt-BR', { 
+        timeZone: 'America/Sao_Paulo' 
+    })
+
     const leitura = {
         temperatura: temp,
         umidade: hum,
-        data: new Date()
+        data: dataFormatada
     }
 
     dados.push(leitura)
