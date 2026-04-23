@@ -20,7 +20,7 @@ app.get("/sensor", (req,res) =>{
 
     console.log(leitura)
 
-    return send.ok
+     send.ok
 })
 
 
